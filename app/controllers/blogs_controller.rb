@@ -13,7 +13,7 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(blog_params)
     @blog.save
-    redirect_to blog_apth
+    redirect_to blogs_apth
   end
 
   def edit
