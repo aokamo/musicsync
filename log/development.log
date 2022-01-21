@@ -525,3 +525,18 @@ Processing by BlogsController#show as HTML
 Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 5983)
 
 
+Started GET "/blogs/2" for ::1 at 2022-01-21 20:49:10 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 6598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 11616)
+Completed 200 OK in 26ms (Views: 17.5ms | ActiveRecord: 0.3ms | Allocations: 19676)
+
+
