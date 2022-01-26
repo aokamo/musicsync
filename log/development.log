@@ -628,3 +628,40 @@ Processing by BlogsController#show as HTML
 Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 5906)
 
 
+Started GET "/" for ::1 at 2022-01-26 18:07:03 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.3ms | Allocations: 350)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2489)
+
+
+Started GET "/" for ::1 at 2022-01-26 18:07:04 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 238)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 1003)
+
+
+Started GET "/blogs" for ::1 at 2022-01-26 18:07:11 +0900
+  
+SyntaxError (/Users/okamotoatsushi/work/musicsync/app/controllers/blogs_controller.rb:43: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/blogs_controller.rb:43: syntax error, unexpected end-of-input, expecting end
+app/controllers/blogs_controller.rb:43: syntax error, unexpected end-of-input, expecting end
+app/controllers/blogs_controller.rb:43: syntax error, unexpected end-of-input, expecting end
+Started GET "/blogs" for ::1 at 2022-01-26 18:07:36 +0900
+Processing by BlogsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/blogs/index.html.erb:41
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:41
+  Rendered blogs/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 12304)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 17230)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.9ms | Allocations: 18850)
+
+

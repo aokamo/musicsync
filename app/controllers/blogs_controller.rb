@@ -17,6 +17,7 @@ class BlogsController < ApplicationController
       redirect_to blog_path(@blog.id)
     else
       render :new
+    end
   end
 
   def edit
